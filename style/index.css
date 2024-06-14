@@ -1,0 +1,391 @@
+/* Default */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Import */
+
+@font-face {
+    font-family: 'cyborg';
+    src: url('../fonts/Cyborg-Punk.ttf');
+}
+
+@font-face {
+    font-family: 'batangas';
+    src: url('../fonts/Batangas-Bold-700.otf');
+}
+
+@font-face {
+    font-family: 'akira';
+    src: url('../fonts/Akira-Expanded-Demo.otf');
+}
+
+@font-face {
+    font-family: 'mont';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+/* Template */
+
+h1 {
+    font-family: 'cyborg', 'mont';
+    color: #f69222;
+    font-size: 40px;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.7),
+    4px 4px 0 rgba(0, 0, 0, 0.6),
+    6px 6px 0 rgba(0, 0, 0, 0.5),
+    8px 8px 0 rgba(0, 0, 0, 0.4),
+    10px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-family: 'batangas', 'mont';
+    color: #60359d;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bg {
+    position: relative;
+    overflow: hidden;
+}
+
+.bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6; /* Atur opasitas sesuai kebutuhan */
+    z-index: 1;
+}
+
+.bg .row {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    color: #000;
+}
+
+/* Navigation */
+
+header .nav {
+    width: 100%;
+    height: 80px;
+    padding-inline: 3rem;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: whitesmoke;
+}
+
+header .nav a {
+    text-decoration: none;
+    color: black;
+}
+
+header .nav .logo img {
+    width: 200px;
+    height: auto;
+}
+
+header .nav .web li {
+    display: inline-block;
+    margin-inline: 30px;
+}
+
+header .nav .contact {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: black;
+}
+
+header .mob {
+    display: none;
+}
+
+/* Landing Page */
+
+.one-bg::before {
+    background-image: url('../assets/01-bg.png');
+}
+
+.screen-one {
+    height: 90vh;
+    flex-direction: row;
+}
+
+.screen-one .row {
+    flex-direction: row;
+}
+
+.screen-one .title {
+    align-items: end;
+    gap: 20px;
+    padding-right: 70px;
+}
+
+.screen-one .title h1 {
+    font-size: 65px;
+    text-align: end;
+}
+
+.screen-one .title p {
+    text-align: end;
+    width: 90%;
+    font-size: 30px;
+    padding-right: 5px;
+    text-transform: capitalize;
+}
+
+.screen-one .title a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color: #f69222;
+}
+
+/* Sponsorship */
+
+.two-bg {
+    background-color: white;
+    box-shadow: inset 0 -10px 10px -10px rgba(0, 0, 0, 0.5),
+                inset 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+
+}
+
+.screen-two {
+    height: 200px;
+}
+
+.screen-two .flex {
+    flex-direction: row;
+}
+
+.screen-two img {
+    width: 300px;
+}
+
+/* Definition */
+
+.three-bg::before {
+    background-image: url('../assets/03-bg.png');
+}
+
+.screen-three {
+    height: 900px;
+    gap: 40px;
+}
+
+.screen-three p {
+    width: 70%;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* Competition */
+
+.four-bg {
+    background-color: #60359d;
+}
+
+.screen-four {
+    height: 800px;
+    flex-direction: column;
+}
+
+.screen-four .title {
+    height: 20%;
+}
+
+.screen-four .title h1 {
+    color: white;
+}
+
+.screen-four .card-container {
+    height: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 90px;
+}
+
+.screen-four .card-container .card .img {
+    width: 200px;
+    height: 200px;
+    background-color: whitesmoke;
+}
+
+.screen-four .card-container .card .text {
+    width: 200px;
+    height: 70px;
+}
+
+.screen-four .card-container .card .text p {
+    color: white;
+}
+
+/* Timeline */
+
+.five-bg::before {
+    background-image: url('../assets/05-bg.png');
+}
+
+.screen-five {
+    height: 1850px;
+}
+
+.screen-five .title {
+    height: 10%;
+}
+
+.screen-five .time {
+    height: 90%;
+}
+
+.screen-five .time .line {
+    height: 400px;
+    flex-direction: row;
+}
+
+.screen-five .time .line .text {
+    align-items: start;
+    padding-left: 120px;
+}
+
+.screen-five .time .line .text h3 {
+    font-size: 30px;
+}
+.screen-five .time .line .text p {
+    width: 80%;
+    text-align: justify;
+}
+
+.screen-five .time .line .date {
+    height: 100%;
+    background-color: #60359d;
+}
+
+.screen-five .time .line .date p {
+    color: aliceblue;
+    font-size: 80px;
+    font-family: 'akira', 'mont';
+}
+
+
+/* Highlight */
+
+.six-bg {
+    background-color: #60359d;
+}
+
+.screen-six {
+    width: 100%;
+    height: 650px;
+    gap: 50px;
+    padding-bottom: 50px;
+}
+
+.screen-six h1 {
+    height: 15%;
+    color: white;
+}
+
+.screen-six .img {
+    height: 60%;
+    overflow-x: hidden;
+    flex-direction: row;
+    gap: 30px;
+    background-color: #5c69b0;
+}
+
+.screen-seven .img img {
+    width: 500px;
+    height: 200px;
+}
+
+/* FAQ */
+
+.seven-bg::before {
+    background-image: url('../assets/03-bg.png');
+}
+
+.screen-seven {
+    width: 100%;
+    height: 700px;
+    background-image: url('assets/00-quest.png');
+}
+
+.screen-seven .down {
+    height: 80%;
+}
+
+.screen-seven .down .faq {
+    border-bottom: 3px solid black;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.screen-seven .down .faq .question {
+    height: 50px;
+    justify-content: space-between;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.screen-seven .down .faq .question h3 {
+    font-size: 20px;
+}
+
+.screen-seven .down .faq .question img {
+    width: 20px;
+    transform: transform 0.3s;
+}
+
+.screen-seven .down .faq .answer {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+    border-bottom: 3px solid transparent;  
+}
+
+.screen-seven .down .faq .caret-rotate {
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+}
+
+.screen-seven .down .faq .answer-visible {
+    max-height: 200px;
+    opacity: 1;
+    padding-bottom: 15px;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #60359d;
+}
+
+footer p {
+    color: white;
+}
+/* Responsive Page */
