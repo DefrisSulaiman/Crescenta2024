@@ -1,6 +1,6 @@
 window.onload = function() {
     // Ketika semua elemen telah dimuat, sembunyikan loader
-    var loader = document.getElementById("loader");
+    let loader = document.getElementById("loader");
     loader.style.display = "none";
 };
 
