@@ -36,12 +36,29 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.7); /* Warna latar belakang semi-transparan */
+    background-color: rgba(255, 255, 255); /* Warna latar belakang semi-transparan */
     z-index: 9999; /* Pastikan loader muncul di atas semua elemen lain */
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+/* Animasi putar-putar */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Gaya spinner */
+.loader-spinner {
+    border: 8px solid #f3f3f3; /* Warna latar belakang loader */
+    border-top: 8px solid #3498db; /* Warna lingkaran putar-putar */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; /* Mulai animasi spin */
+}
+
 
 h1 {
     font-family: 'cyborg', 'mont';
