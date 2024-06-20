@@ -14,184 +14,200 @@
         <div class="loader-spinner"></div>
     </div>
     <header>
-        <nav class="flex nav">
+        <nav id="navbar" class="flex nav">
             <div class="logo">
                 <img src="assets/00-logocrc.png" alt="logo">
             </div>
+            <input type="checkbox" id="checkbox">
             <ul class="web">
-                <li><a href="/">Beranda</a></li>
-                <li><a href="/">Lomba</a></li>
-                <li><a href="/">Tentang</a></li>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#comp">Lomba</a></li>
+                <li><a href="#about">Tentang</a></li>
             </ul>
             <a class="contact" href="/">Kontak</a>
         </nav>
-        <ul class="mob">
-            <li><a href="/">Beranda</a></li>
-            <li><a href="/">Lomba</a></li>
-            <li><a href="/">Kontak</a></li>
-        </ul>
+        <div class="mob">
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#comp">Lomba</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a class="contact" href="/">Kontak</a></li>
+            </ul>
+        </div>
     </header>
     <main>
-        <div class="container one-bg bg">
+        <div class="container one-bg bg" id="home">
             <div class="row screen-one flex">
-                <div class="logo col-4">
+                <div class="logo flex col-4 col-xs-12">
                     <img src="assets/01-logoc.png" alt="logo">
                 </div>
-                <div class="title flex col-8">
+                <div class="title flex col-8 col-xs-12">
                     <h1>CRESCENTA XII</h1>
                     <p>Exploring infinity technology as an adventure to harmonize natural intelligence</p>
-                    <a href="/">Daftar Sekarang!</a>
+                    <a href="#comp">Daftar Sekarang!</a>
                 </div>
             </div>
         </div>
         <div class="container two-bg">
             <div class="row screen-two flex">
                 <div class="flex">
-                    <img src="assets/02-sponsor.png" alt="">
-                    <img src="assets/02-sponsor.png" alt="">
-                    <img src="assets/02-sponsor.png" alt="">
-                    <img src="assets/02-sponsor.png" alt="">
+                    <img src="assets/02-sponsor.png" alt="" class="anm">
+                    <img src="assets/02-sponsor.png" alt="" class="anm">
+                    <img src="assets/02-sponsor.png" alt="" class="anm">
+                    <img src="assets/02-sponsor.png" alt="" class="anm">
                 </div>
             </div>
         </div>
         <div class="container three-bg bg">
-            <div class="row screen-three flex">
-                <h1>Apa Itu CRESCENTA?</h1>
-                <p>Kegiatan ini bernama CRESCENTA (Competition and Creation of Science and Technology for Modern Science
-                    Application) yang diadakan oleh OPBS MAN 1 Surakarta dan telah dilaksanakan sejak 2013. Kegiatan ini
-                    menyuguhkan berbagai cabang lomba di bidang sains dan teknologi yang dapat diikuti oleh siswa-siswi
-                    SMP/MTs sederajat dari berbagai daerah yang tersebar di Pulau Jawa.</p>
-                <video width="600" controls>
+            <div class="row screen-three flex" id="about">
+                <h1 class="flex col-12 col-xs-12 anm">Apa Itu CRESCENTA?</h1>
+                <p class="flex col-12 col-xs-12 anm">CRESCENTA adalah kepanjangan dari Competition and Creation of
+                    Science and Technology for Modern yang
+                    merupakan kegiatan yang diadakan oleh OPBS MAN 1 Surakarta. Kegiatan ini telah terlaksana selama 12
+                    tahun yang diikuti oleh siswa/i MTs/SMP/Sederajat dari berbagai daerah. CRESCENTA 2024 memiliki 8
+                    cabang perlombaan yang meliputi Olimpiade Matematika, Olimpiade IPA, Lomba Cerdas Cermat, Teknologi
+                    Tepat Guna, Projek Inovasi, Poster Digital, Mading 3D, dan Robotik Maze Solving. CRESCENTA 2024
+                    mengambil tema "Exploring Infinity Technology as an Adventure to Harmonize Natural Intelligence"</p>
+                <!-- <video width="600" controls>
                     <source src="assets/Instagram 2024-05-29 21-33-39.mp4" type="video/mp4">
                     Your browser does not support the video tag.
-                </video>
+                </video> -->
+                <img src="assets/03-trailer.png" alt="" class="anm">
             </div>
         </div>
-        <div class="container four-bg">
+        <div class="container four-bg" id="comp">
             <div class="row screen-four flex">
-                <div class="title flex">
-                    <h1>Kompetisi Crescenta</h1>
+                <div class="title flex col-xs-12">
+                    <h1 class="anm">Kompetisi Crescenta</h1>
                 </div>
-                <div class="card-container flex col-9">
-                    <div class="card flex">
+                <div class="card-container flex col-9 col-xs-12">
+                    <a href="/c-ipa.html" class="card flex anm">
                         <div class="img flex">
-                            <img src="" alt="">
+                            <img src="assets/04-earth.png" alt="IPA">
                         </div>
                         <div class="text flex">
                             <p>Olimpiade IPA</p>
                         </div>
-                    </div>
-                    <div class="card flex">
+                    </a>
+                    <a href="/c-mtk.html" class="card flex anm">
                         <div class="img flex">
-                            <img src="" alt="">
+                            <img src="assets/04-math.png" alt="math">
                         </div>
                         <div class="text flex">
-                            <p>Olimpiade IPA</p>
+                            <p>Olimpiade MTK</p>
                         </div>
-                    </div>
-                    <div class="card flex">
+                    </a>
+                    <a href="/c-lcc.html" class="card flex anm">
                         <div class="img flex">
-                            <img src="" alt="">
+                            <img src="assets/04-goal.png" alt="brain">
                         </div>
                         <div class="text flex">
-                            <p>Olimpiade IPA</p>
+                            <p>Lomba Cerdas Cermat</p>
                         </div>
-                    </div>
-                    <div class="card flex">
+                    </a>
+                    <a href="/c-mzv.html" class="card flex anm">
                         <div class="img flex">
-                            <img src="" alt="">
+                            <img src="assets/04-maze.png" alt="Maze">
                         </div>
                         <div class="text flex">
-                            <p>Olimpiade IPA</p>
+                            <p>Maze Solving</p>
                         </div>
-                    </div>
-                    <div class="card flex">
+                    </a>
+                    <a href="/c-pnv.html" class="card flex anm">
                         <div class="img flex">
-                            <img src="" alt="">
+                            <img src="assets/04-idea.png" alt="idea">
                         </div>
                         <div class="text flex">
-                            <p>Olimpiade IPA</p>
+                            <p>Projek Inovasi</p>
                         </div>
-                    </div>
-                    <div class="card flex">
+                    </a>
+                    <a href="/c-ttg.html" class="card flex anm">
                         <div class="img flex">
-                            <img src="" alt="">
+                            <img src="assets/04-tech.png" alt="technology">
                         </div>
                         <div class="text flex">
-                            <p>Olimpiade IPA</p>
+                            <p>Teknologi Tepat Guna</p>
                         </div>
-                    </div>
-                    <div class="card flex">
+                    </a>
+                    <a href="/c-pdg.html" class="card flex anm">
                         <div class="img flex">
-                            <img src="" alt="">
+                            <img src="assets/04-poster.png" alt="Poster">
                         </div>
                         <div class="text flex">
-                            <p>Olimpiade IPA</p>
+                            <p>Poster Digital</p>
                         </div>
-                    </div>
-                    <div class="card flex">
+                    </a>
+                    <a href="/c-m3d.html" class="card flex anm">
                         <div class="img flex">
-                            <img src="" alt="">
+                            <img src="assets/04.house.png" alt="mading">
                         </div>
                         <div class="text flex">
-                            <p>Olimpiade IPA</p>
+                            <p>Mading 3D</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="container five-bg bg">
             <div class="row screen-five flex">
-                <div class="title flex">
-                    <h1>Alur Pendaftaran</h1>
+                <div class="title flex col-12">
+                    <h1 class="anm">Alur Pendaftaran</h1>
                 </div>
                 <div class="time">
-                    <div class="line flex">
-                        <div class="text flex col-4">
-                            <h3>Registrasi Dibuka</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod corporis mollitia ipsa ipsam iure excepturi vitae soluta doloremque veritatis repellat, recusandae voluptates dolor eveniet, reprehenderit dignissimos rem ut voluptatibus. Consectetur.</p>
+                    <div class="line flex ">
+                        <div class="text flex col-4 col-xs-8">
+                            <h3 class="anm">Registrasi Dibuka</h3>
+                            <p class="anm"> Registrasi akan dibagi menjadi dua gelombang, Gelombang I akan diadakan dari
+                                1 Juli 2024 - 21 Juli 2024. Kemudian dilanjutkan Gelombang II pada 22 Juli 2024 - 25
+                                Agustus 2024. Pastikan kamu sudah mendaftar di lomba yang diinginkan sebelum registrasi
+                                ditutup ya</p>
                         </div>
-                        <div class="date flex col-2">
-                            <p>06<br>06</p>
+                        <div class="date flex col-2 col-xs-4">
+                            <p class="anm">01<br>JUL</p>
                         </div>
                         <div class="img col-6">
-                            <img src="assets/Pixel City Chill GIF - Pixel City Chill - Discover & Share GIFs.gif" alt="">
+                            <img src="assets/05-gbr1.png" width="300" alt="" class="anm">
                         </div>
                     </div>
-                    <div class="line flex">
-                        <div class="text flex col-4">
-                            <h3>Registrasi Dibuka</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod corporis mollitia ipsa ipsam iure excepturi vitae soluta doloremque veritatis repellat, recusandae voluptates dolor eveniet, reprehenderit dignissimos rem ut voluptatibus. Consectetur.</p>
+                    <div class="line flex ">
+                        <div class="text flex col-4 col-xs-8">
+                            <h3 class="anm">Registrasi Ditutup</h3>
+                            <p class="anm">Ketika registrasi ditutup, kamu sudah tidak bisa lagi mendaftar ya, pastikan
+                                kamu sudah mendaftar sebelum tanggal 30 September 2024 ya!</p>
                         </div>
-                        <div class="date flex col-2">
-                            <p>06<br>06</p>
+                        <div class="date flex col-2 col-xs-4">
+                            <p class="anm">30<br>AGU</p>
                         </div>
                         <div class="img col-6">
-                            <img src="assets/Pixel City Chill GIF - Pixel City Chill - Discover & Share GIFs.gif" alt="">
+                            <img src="assets/05-gbr2.png" alt="" class="anm">
                         </div>
                     </div>
-                    <div class="line flex">
-                        <div class="text flex col-4">
-                            <h3>Registrasi Dibuka</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod corporis mollitia ipsa ipsam iure excepturi vitae soluta doloremque veritatis repellat, recusandae voluptates dolor eveniet, reprehenderit dignissimos rem ut voluptatibus. Consectetur.</p>
+                    <div class="line flex ">
+                        <div class="text flex col-4 col-xs-8">
+                            <h3 class="anm">Technical Meeting</h3>
+                            <p class="anm">Technical meeting adalah pengarahan dari panitia dalam sebuah kegiatan atau
+                                perlombaan untuk memastikan semua peserta dan panitia memiliki pemahaman yang sama
+                                tentang jalannya acara. Technical meeting diadakan guna membahas berbagai hal teknis
+                                selama acara berlangsung di hari H</p>
                         </div>
-                        <div class="date flex col-2">
-                            <p>06<br>06</p>
+                        <div class="date flex col-2 col-xs-4">
+                            <p class="anm">02<br>SEP</p>
                         </div>
                         <div class="img col-6">
-                            <img src="assets/Pixel City Chill GIF - Pixel City Chill - Discover & Share GIFs.gif" alt="">
+                            <img src="assets/05-gbr3.png" alt="" class="anm">
                         </div>
                     </div>
-                    <div class="line flex">
-                        <div class="text flex col-4">
-                            <h3>Registrasi Dibuka</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod corporis mollitia ipsa ipsam iure excepturi vitae soluta doloremque veritatis repellat, recusandae voluptates dolor eveniet, reprehenderit dignissimos rem ut voluptatibus. Consectetur.</p>
+                    <div class="line flex ">
+                        <div class="text flex col-4 col-xs-8">
+                            <h3 class="anm">Crescenta 2024</h3>
+                            <p class="anm">Inilah puncak acaranya, pada 7 September 2024 ini kalian akan berkompetisi
+                                dengan siswa SMP yang berasal dari seluruh daerah yang ada di pulau Jawa </p>
                         </div>
-                        <div class="date flex col-2">
-                            <p>06<br>06</p>
+                        <div class="date flex col-2 col-xs-4">
+                            <p class="anm">07<br>SEP</p>
                         </div>
                         <div class="img col-6">
-                            <img src="assets/Pixel City Chill GIF - Pixel City Chill - Discover & Share GIFs.gif" alt="">
+                            <img src="assets/05-gbr4.png" alt="" class="anm">
                         </div>
                     </div>
                 </div>
@@ -199,11 +215,19 @@
         </div>
         <div class="container six-bg">
             <div class="row screen-six flex">
-                <h1 class="flex">Highlight CRC 2023</h1>
-                <div class="img flex col-12">
-                    <img src="assets/Pixel City Chill GIF - Pixel City Chill - Discover & Share GIFs.gif" alt="">
+                <h1 class="flex anm">Highlight CRC 2023</h1>
+                <div class="scroller__inner img flex col-12">
+                    <div class="scroller flex anm">
+                        <img src="assets/06-band.png" alt="">
+                        <img src="assets/06-mading.png" alt="">
+                        <img src="assets/06-olim.png" alt="">
+                        <img src="assets/06-reward.png" alt="">
+                        <img src="assets/06-robotic.png" alt="">
+                        <img src="assets/06-ttg.png" alt="">
+                    </div>
                 </div>
             </div>
+        </div>
         </div>
         <div class="container seven-bg bg" id="faq">
             <div class="row screen-seven flex">
@@ -213,56 +237,61 @@
                 <div class="down flex col-9">
                     <div class="faq anm">
                         <div class="question flex">
-                            <h3>Apa Itu LokaWeb?</h3>
+                            <h3>Bagaimana Cara Pendaftaran CRESCENTA 2024?</h3>
                             <img src="assets/07-caret.png" alt="caret" class="caret">
                         </div>
                         <div class="answer">
-                            <p>LokaWeb adalah sebuah jasa pembuatan website bagi pengrajin dan seniman lokal, lembaga, event, UMKM, startup, perusahaan, dan bidang lain yang membutuhkan jasa pembuatan website </p>
+                            <p>Untuk pendaftaran CRESCENTA 2024, teman-teman bisa membuka bagian lomba yang mau diikuti
+                                ya, yang berada di segmen <a href="">Kompetisi</a> yap! Nanti di halaman lomba yang
+                                dipilih, akan ada formulir pendaftaran beserta juknisnya</p>
                         </div>
                     </div>
                     <div class="faq anm">
                         <div class="question flex">
-                            <h3>Apakah UMKM bisa memilih Paket Lokal?</h3>
+                            <h3>Untuk Metode Pembayaran Bisa Melalui Apa?</h3>
                             <img src="assets/07-caret.png" alt="caret" class="caret">
                         </div>
                         <div class="answer">
-                            <p>Bisa, tergantung usahanya bergerak di bidang apa? jika misal bergerak di bidang kuliner lokal, fashion lokal, dan sejenisnya, maka bisa memilih Paket Lokal</p>
+                            <p>Metode pembayaran CRESCENTA 2024 bisa melalui .., .., .., ya Grotuvas!</p>
                         </div>
                     </div>
                     <div class="faq anm">
                         <div class="question flex">
-                            <h3>Apakah ada biaya bulanan setelah setahun?</h3>
+                            <h3>Bagaimana Cara Mengetahui NISN?</h3>
                             <img src="assets/07-caret.png" alt="caret" class="caret">
                         </div>
                         <div class="answer">
-                            <p>Ada, jika hosting web 12 bulan sudah selesai, maka anda bisa berlangganan Rp 50.000/bulan supaya website tetap berada di internet. Karena, untuk sebuah website dapat berada di internet, dibutuhkan hosting dan domain (nama website).</p>
+                            <p>Untuk mengetahui NISN, bisa kalian cek melalui (web NISN) atau bisa bertanya kepada pihak
+                                sekolah ya!</p>
                         </div>
                     </div>
                     <div class="faq anm">
                         <div class="question flex">
-                            <h3>Pembuatan website berapa lama?</h3>
+                            <h3>Bagaimana Kategori Juara Setiap Lomba?</h3>
                             <img src="assets/07-caret.png" alt="caret" class="caret">
                         </div>
                         <div class="answer">
-                            <p>Tergantung dari desain dan banyaknya fitur yang diinginkan, biasanya kami menyelesaikannya dalam waktu 3-7 hari kerja</p>
+                            <p>CRESCENTA 2024 memiliki 8 cabang lomba yang meliputi lomba sains dan robotik. Setiap
+                                cabang perlombaan akan diambil 3 juara.</p>
                         </div>
                     </div>
                     <div class="faq anm">
                         <div class="question flex">
-                            <h3>Bagaimana jika ingin menambah fitur?</h3>
+                            <h3>Apa Saja Benefit Yang Didapatkan Jika Mengikuti CRESCENTA 2024?</h3>
                             <img src="assets/07-caret.png" alt="caret" class="caret">
                         </div>
                         <div class="answer">
-                            <p>Bisa, tetapi untuk menambah fitur dan halaman hanya bisa dilakukan di Paket Profesional. Harga akan menyesuaikan berdasarkan fitur yang diminta</p>
+                            <p>Benefit yang akan kalian dapatkan yaitu goodie bag, snack, makan siang, sertifikat,
+                                pengalaman baru, dan tentunya teman baru ya!</p>
                         </div>
                     </div>
                     <div class="faq anm">
                         <div class="question flex">
-                            <h3>Perbedaan Paket Lokal dan Paket Profesional?</h3>
+                            <h3>Question?</h3>
                             <img src="assets/07-caret.png" alt="caret" class="caret">
                         </div>
                         <div class="answer">
-                            <p>Di Paket Profesional, anda akan mendapatkan kebebasan dalam meminta fitur dan kustomisasi desain. Sedangkan untuk Paket Lokal, anda akan mendapat fitur yang disesuaikan dan desain yang diinginkan, serta mendapat Pelatihan Digitalisasi Marketing.</p>
+                            <p>answer</p>
                         </div>
                     </div>
                 </div>

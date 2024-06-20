@@ -71,7 +71,8 @@
   .col-11 { width: 91.66%; }
   .col-12 { width: 100%; }
   
-  /* Responsive columns for extra small devices */
+ /* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
   .col-xs-1 { width: 8.33%; }
   .col-xs-2 { width: 16.66%; }
   .col-xs-3 { width: 25%; }
@@ -84,6 +85,8 @@
   .col-xs-10 { width: 83.33%; }
   .col-xs-11 { width: 91.66%; }
   .col-xs-12 { width: 100%; }
+}
+
   
   /* Responsive columns for small devices */
   @media (min-width: var(--breakpoint-sm)) {
@@ -102,7 +105,7 @@
   }
   
   /* Responsive columns for medium devices */
-  @media (min-width: var(--breakpoint-md)) {
+  @media (max-width: var(--breakpoint-md)) {
     .col-md-1 { width: 8.33%; }
     .col-md-2 { width: 16.66%; }
     .col-md-3 { width: 25%; }
@@ -118,7 +121,7 @@
   }
   
   /* Responsive columns for large devices */
-  @media (min-width: var(--breakpoint-lg)) {
+  @media (max-width: var(--breakpoint-lg)) {
     .col-lg-1 { width: 8.33%; }
     .col-lg-2 { width: 16.66%; }
     .col-lg-3 { width: 25%; }
@@ -134,7 +137,7 @@
   }
   
   /* Responsive columns for extra large devices */
-  @media (min-width: var(--breakpoint-xl)) {
+  @media (max-width: var(--breakpoint-xl)) {
     .col-xl-1 { width: 8.33%; }
     .col-xl-2 { width: 16.66%; }
     .col-xl-3 { width: 25%; }
