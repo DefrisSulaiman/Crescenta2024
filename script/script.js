@@ -14,7 +14,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-
 document.addEventListener('DOMContentLoaded', () => {
   const faqs = document.querySelectorAll('.faq');
 
