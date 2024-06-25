@@ -203,7 +203,7 @@ header .mob {
     align-items: end;
 }
 .screen-one .logo img {
-    width: 400px;
+    width: 380px;
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5))
     drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3))
     drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.2));
@@ -216,7 +216,7 @@ header .mob {
 }
 
 .screen-one .title h1 {
-    font-size: 65px;
+    font-size: 60px;
     text-align: end;
 }
 
@@ -290,12 +290,13 @@ header .mob {
 }
 
 .screen-four {
-    height: 800px;
+    height: fit-content;
     flex-direction: column;
 }
 
 .screen-four .title {
     height: 20%;
+    padding-block: 40px;
 }
 
 .screen-four .title h1 {
@@ -365,6 +366,7 @@ header .mob {
 }
 
 .screen-five .time .line .text h3 {
+    width: 80%;
     font-size: 30px;
 }
 .screen-five .time .line .text p {
@@ -379,7 +381,7 @@ header .mob {
 
 .screen-five .time .line .date p {
     color: aliceblue;
-    font-size: 70px;
+    font-size: 60px;
     font-family: 'akira', 'mont';
 }
 
@@ -508,7 +510,290 @@ footer p {
 
 /* Responsive Page */
 
-@media (max-width: 575.98px) {
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    header .nav {
+        padding-inline: 2rem;
+    }
+
+    header .nav .logo img {
+        width: 120px;
+    }
+
+    header .nav input {
+        display: inline-block;
+    }
+
+    header .nav input[type="checkbox"] {
+        appearance: none; /* Menghapus tampilan default */
+        width: 25px;
+        height: 25px;
+        background: url('../assets/00-menu.png') no-repeat center center;
+        background-size: cover;
+        cursor: pointer;
+        transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    header .nav input[type="checkbox"]:checked {
+        width: 25px;
+        height: 25px;
+        background: url('../assets/00-close.png') no-repeat center center;
+        background-size: cover;
+        transform: rotate(360deg);
+    }
+
+    header .nav .web,
+    header .nav a {
+        display: none;
+    }
+
+    header .mob {
+        width: 100%;
+        /* border-radius: 0px 0px 30px 30px; */
+        position: fixed;
+        justify-content: center;
+        z-index: 997;
+        padding-top: 80px;
+        overflow-x: hidden;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+    }
+    
+    header .mob ul {
+        width: 100%;
+    }
+    
+    header .mob ul li {
+        list-style: none;
+        text-align: center;
+        padding-block: 0.7rem;
+    }
+
+    header .mob ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .screen-one {
+        padding-top: 0;
+    }
+    
+    .screen-one.row {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 30px;
+    }
+    .screen-one .logo {
+        align-items: center;
+    }
+
+    .screen-one .logo img {
+        width: 250px;
+    }
+    
+    .screen-one .title {
+        align-items: right;
+        gap: 20px;
+        padding: 0px;
+    }
+    
+    .screen-one .title h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .screen-one .title p {
+        text-align: right;
+        width: 100%;
+        font-size: 20px;
+        padding-right: 0px;
+    }
+    
+    .screen-one .title a {
+        font-size: 15px;
+    }
+
+    .screen-three {
+        gap: 30px;
+        height: fit-content;
+        flex-direction: row;
+    }
+    
+    .screen-three p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .screen-three img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    .screen-four {
+        height: fit-content;
+    }
+    
+    .screen-four .title {
+        height: fit-content;
+        padding-block: 40px;
+    }
+    
+    .screen-four .card-container {
+        height: fit-content;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .screen-four .card-container .card .img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .screen-four .card-container .card .img img {
+        width: 70px;
+    }
+    
+    .screen-four .card-container .card .text {
+        width: 100px;
+        height: 50px;
+    }
+    
+    .screen-four .card-container .card .text p {
+        font-size: 10px;
+    }
+
+    .screen-five {
+        height: fit-content;
+    }
+    
+    .screen-five .title {
+        padding-block: 40px;
+        height: fit-content;
+    }
+    
+    .screen-five .time {
+        height: fit-content;
+    }
+    
+    .screen-five .time .line {
+        height: 250px;
+        flex-direction: row;
+    }
+    
+    .screen-five .time .line .text {
+        padding-left: 0px;
+    }
+    
+    .screen-five .time .line .text h3 {
+        font-size: 20px;
+    }
+
+    .screen-five .time .line .text p {
+        width: 100%;
+        font-size: 10px;
+    }
+    
+    .screen-five .time .line .date p {
+        font-size: 25px;
+    }
+    
+    .screen-five .time .line .img {
+        display: none;
+    }
+
+    .screen-five .time .line .img img {
+        width: 300px;
+    }
+
+    .screen-six {
+        width: 100%;
+        height: fit-content;
+        gap: 10px;
+        padding-bottom: 20px;
+    }
+    
+    .screen-six h1 {
+        padding-block: 20px;
+        height: fit-content;
+    }
+    
+    .screen-six .img {
+        height: 200px;
+    }
+
+    .screen-six .img .scroller {
+        gap: 10px;
+        flex-direction: row;
+    }
+    
+    .screen-six .img img {
+        min-width: 30px;
+        height: 170px;
+        background-color: transparent;
+        animation: scroll 30s linear infinite;
+    }
+
+    @keyframes scroll {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-700%); }
+      }
+
+    .screen-seven {
+        height: fit-content;
+    }
+
+    .screen-seven .up {
+        padding-block: 20px;
+    }
+    
+    .screen-seven .down {
+        height: fit-content;
+        width: 100%;
+    }
+    
+    .screen-seven .down .faq {
+        border-bottom: 3px solid black;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
+    .screen-seven .down .faq .question {
+        height: 50px;
+        justify-content: space-between;
+        flex-direction: row;
+        cursor: pointer;
+    }
+    
+    .screen-seven .down .faq .question h3 {
+        width: 90%;
+        font-size: 13px;
+        font-weight: 700;
+    }
+    
+    .screen-seven .down .faq .question img {
+        width: 20px;
+        transform: transform 0.3s;
+    }
+
+    .screen-seven .down .faq .answer p {
+        padding-top: 5px;
+        font-size: 10px;
+    }
+
+    footer p {
+        width: 90%;
+        font-size: 13px;
+        text-align: center;
+
+    }
+}
+
+
+@media (max-width: 992px) {
     h1 {
         font-size: 25px;
     }
@@ -602,6 +887,7 @@ footer p {
     .screen-one .title h1 {
         font-size: 30px;
         text-align: center;
+        color: #60359d;
     }
     
     .screen-one .title p {
@@ -622,7 +908,6 @@ footer p {
     }
     
     .screen-three p {
-        width: 100%;
         font-size: 10px;
         text-align: center;
     }
