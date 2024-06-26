@@ -55,14 +55,14 @@ document.addEventListener('DOMContentLoaded', function () {
     if (window.scrollY >= window.innerHeight * 0.2) {
       navbar.style.width = '70%';
       navbar.style.borderRadius = '50px';
-      navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.7)';
+      navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.6)';
       navbar.style.backdropFilter = 'blur(25px)';
       navbar.style.marginTop = '20px';
 
       mobile.style.width = '70%'
       mobile.style.paddingTop = '0px'
       mobile.style.marginTop = '120px'
-      mobile.style.backgroundColor = 'rgba(255, 255, 255, 0.7)';
+      mobile.style.backgroundColor = 'rgba(255, 255, 255, 0.6)';
       mobile.style.backdropFilter = 'blur(25px)';
       mobile.style.borderRadius = '20px';
     } else {

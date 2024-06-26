@@ -870,6 +870,7 @@ footer p {
         flex-direction: column;
         gap: 30px;
     }
+
     .screen-one .logo {
         align-items: center;
     }
@@ -887,7 +888,7 @@ footer p {
     .screen-one .title h1 {
         font-size: 30px;
         text-align: center;
-        color: #60359d;
+        color: #f69222;
     }
     
     .screen-one .title p {
@@ -908,12 +909,13 @@ footer p {
     }
     
     .screen-three p {
+        width: 100%;
+        text-align: justify;
         font-size: 10px;
-        text-align: center;
     }
 
     .screen-three img {
-        max-width: 300px;
+        max-width: 270px;
         height: auto;
     }
 
@@ -973,6 +975,7 @@ footer p {
     }
     
     .screen-five .time .line .text h3 {
+        width: 100%;
         font-size: 20px;
     }
 
@@ -1073,5 +1076,34 @@ footer p {
         font-size: 13px;
         text-align: center;
 
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .screen-one .logo img {
+        width: 230px;
+    }
+    
+    .screen-one .title h1 {
+        font-size: 25px;
+    }
+    
+    .screen-one .title p {
+        width: 150%;
+        font-size: 15px;
+        padding-right: 0px;
+    }
+    
+    .screen-one .title a {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .screen-five .time .line .text.col-4 {
+        width: 66.66%;
+    }
+
+    .screen-five .time .line .date.col-2 {
+        width: 33.33%;
     }
 }
