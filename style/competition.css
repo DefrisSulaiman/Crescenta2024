@@ -145,7 +145,7 @@ footer p {
 
 /* Responsive */
 
-@media (max-width: 575.98px) {
+@media (max-width: 992px) {
     
     .screen-main .content {
         height: 90%;
