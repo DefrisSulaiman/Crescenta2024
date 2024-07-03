@@ -73,6 +73,7 @@
 a {
     font-size: 12px;
     font-family: 'mont';
+    cursor: pointer;
 }
 
 body {
@@ -122,6 +123,11 @@ main {
     font-size: 25px;
     font-weight: 400;
     font-family: 'batangas', 'mont';
+}
+
+.screen-main .content .btn {
+    display: flex;
+    align-items: center;
 }
 
 .screen-main .content .btn a {

@@ -284,7 +284,7 @@ header .mob {
     text-align: center;
 }
 
-.screen-three img {
+.screen-three video {
     max-width: 600px;
     height: auto;
 }
@@ -448,6 +448,11 @@ header .mob {
 
 .seven-bg::before {
     background-image: url('../assets/03-bg.png');
+}
+
+.linkfaq {
+    color: blue;
+    font-family: 'batangas';
 }
 
 .screen-seven {

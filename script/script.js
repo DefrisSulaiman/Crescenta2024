@@ -86,19 +86,3 @@ document.getElementById('checkbox').addEventListener('change', function () {
     nav.style.display = 'none';
   }
 });
-
-let clickCounter = 0;  // Counter untuk melacak jumlah klik
-const whatsappNumbers = [
-  'https://wa.me/6285891284571', // Ganti dengan nomor WhatsApp kedua
-  'https://wa.me/6281211352425' // Ganti dengan nomor WhatsApp pertama
-];
-
-document.querySelector('.contact').addEventListener('click', function() {
-    const selectedNumber = whatsappNumbers[clickCounter % 2];
-    window.location.href = selectedNumber;
-    clickCounter++;
-    console.log('Nomor WhatsApp yang dipilih:', selectedNumber); // Debug: Tambahkan log untuk memeriksa nomor yang dipilih
-    console.log('Jumlah klik:', clickCounter); // Debug: Tambahkan log untuk memeriksa jumlah klik
-});
-
-
