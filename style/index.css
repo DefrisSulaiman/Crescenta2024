@@ -404,44 +404,15 @@ header .mob {
 
 .screen-six {
     width: 100%;
-    height: 650px;
+    height: fit-content;
     gap: 50px;
     padding-bottom: 50px;
+    flex-direction: column;
 }
 
 .screen-six h1 {
-    height: 15%;
     color: white;
-}
-
-.screen-six .img {
-    height: 400px;
-    flex-direction: row;
-    justify-content: start;
-    overflow-x: auto;
-    gap: 30px;
-    background-image: url('../assets/03-bg.png');
-    white-space: nowrap; /* Menjaga gambar dalam satu baris */
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-}
-
-.screen-six .img::-webkit-scrollbar { /* WebKit */
-    width: 0;
-    height: 0;
-}
-
-.screen-six .img .scroller {
-    gap: 30px;
-    flex-direction: row;
-}
-
-.screen-six .img img {
-    min-width: 500px;
-    height: 300px;
-    overflow-x: scroll;
-    background-color: #000;
-    display: inline-block; /* Memastikan gambar dalam satu baris */
+    margin-top: 30px;
 }
 
 /* FAQ */
@@ -805,6 +776,10 @@ footer p {
 
 
 @media (max-width: 992px) {
+    video {
+        width: 300px;
+        height: auto;
+    }
     h1 {
         font-size: 25px;
     }

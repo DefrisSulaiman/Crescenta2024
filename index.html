@@ -12,6 +12,7 @@
     <link rel="icon" href="assets/01-logoc.ico" type="image/x-icon">
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="style/carousel.css">
     <!-- change test -->
     <title>Crescenta 2024</title>
 </head>
@@ -162,12 +163,12 @@
                         <div class="text flex col-4 col-lg-8">
                             <h3 class="anm">Registrasi Dibuka</h3>
                             <p class="anm"> Registrasi akan dibagi menjadi dua gelombang, Gelombang I akan diadakan dari
-                                1 Juli 2024 - 21 Juli 2024. Kemudian dilanjutkan Gelombang II pada 22 Juli 2024 - 25
+                                3 Juli 2024 - 21 Juli 2024. Kemudian dilanjutkan Gelombang II pada 22 Juli 2024 - 25
                                 Agustus 2024. Pastikan kamu sudah mendaftar di lomba yang diinginkan sebelum registrasi
                                 ditutup ya</p>
                         </div>
                         <div class="date flex col-2 col-lg-4">
-                            <p class="anm">01<br>JUL</p>
+                            <p class="anm">03<br>JUL</p>
                         </div>
                         <div class="img col-6">
                             <img src="assets/05-gbr1.png" width="300" alt="Registrasi Crescenta 2024 Dibuka"
@@ -221,15 +222,39 @@
         <div class="container six-bg">
             <div class="row screen-six flex">
                 <h1 class="flex anm">Highlight CRC 2023</h1>
-                <div class="scroller__inner img flex col-12">
-                    <div class="scroller flex anm">
-                        <img src="assets/06-band.png" alt="Dokumentasi Crescenta">
-                        <img src="assets/06-mading.png" alt="Dokumentasi Crescenta">
-                        <img src="assets/06-olim.png" alt="Dokumentasi Crescenta">
-                        <img src="assets/06-reward.png" alt="Dokumentasi Crescenta">
-                        <img src="assets/06-robotic.png" alt="Dokumentasi Crescenta">
-                        <img src="assets/06-ttg.png" alt="Dokumentasi Crescenta">
+                <div class="slider anm">
+                    <div class="list">
+                        <div class="item">
+                            <img src="assets/06-band.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="assets/06-mading.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="assets/06-olim.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="assets/06-reward.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="assets/06-robotic.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="assets/06-ttg.png" alt="">
+                        </div>
                     </div>
+                    <div class="buttons">
+                        <button id="prev"><</button>
+                        <button id="next">></button>
+                    </div>
+                    <ul class="dots">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -300,6 +325,7 @@
     <footer class="flex">
         <p>Copyright © 2024 CRESCENTA OPBS. All Rights Reserved. </p>
     </footer>
+    <script src="script/carousel.js"></script>
     <script src="script/script.js"></script>
 </body>
 
