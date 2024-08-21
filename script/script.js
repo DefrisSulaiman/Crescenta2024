@@ -1,11 +1,9 @@
 window.onload = function () {
-  // Ketika semua elemen telah dimuat, sembunyikan loader
+  // Fungsi untuk menyembunyikan loader
   let loader = document.getElementById("loader");
   loader.style.display = "none";
-};
 
-// script.js
-window.onload = function () {
+  // Fungsi untuk menampilkan popup
   const popupPoster = document.getElementById('popupPoster');
   const closePopup = document.getElementById('closePopup');
 
