@@ -4,6 +4,31 @@ window.onload = function () {
   loader.style.display = "none";
 };
 
+// script.js
+window.onload = function () {
+  const popupPoster = document.getElementById('popupPoster');
+  const closePopup = document.getElementById('closePopup');
+
+  // Munculkan pop-up dengan animasi setelah 2 detik
+  setTimeout(function () {
+      popupPoster.classList.remove('hidden');
+      popupPoster.classList.add('show');
+  }, 2000);
+
+  // Fungsi untuk menutup pop-up ketika tombol silang ditekan
+  closePopup.onclick = function () {
+      popupPoster.style.display = 'none';
+  }
+
+  // Fungsi untuk menutup pop-up ketika area luar pop-up ditekan
+  window.onclick = function (event) {
+      if (event.target == popupPoster) {
+          popupPoster.style.display = 'none';
+      }
+  }
+};
+
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
       e.preventDefault();
