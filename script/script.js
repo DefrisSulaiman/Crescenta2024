@@ -11,7 +11,7 @@ window.onload = function () {
   setTimeout(function () {
       popupPoster.classList.remove('hidden');
       popupPoster.classList.add('show');
-  }, 2000);
+  }, 5000);
 
   // Fungsi untuk menutup pop-up ketika tombol silang ditekan
   closePopup.onclick = function () {

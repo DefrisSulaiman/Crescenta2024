@@ -48,3 +48,41 @@ body {
 .hidden {
     display: none;
 }
+
+  /* Animasi untuk opacity di elemen dengan class ads */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .ads {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  /* Animasi untuk bounce di elemen dengan class pop */
+  @keyframes bounceInScale {
+    0% {
+      transform: scale(0.3);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    70% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .pop {
+    transform: scale(0.3);
+    animation: bounceInScale 1s ease forwards;
+  }
+  
+  
