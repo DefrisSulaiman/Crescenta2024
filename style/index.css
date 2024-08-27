@@ -604,6 +604,10 @@ footer p {
         font-size: 15px;
     }
 
+    .three-bg {
+        padding-block: 90px;
+    }
+
     .screen-three {
         gap: 30px;
         height: fit-content;
@@ -897,6 +901,10 @@ footer p {
         width: 300px;
     }
 
+    .three-bg {
+        padding-block: 90px;
+    }
+
     .screen-three {
         gap: 30px;
         height: fit-content;
@@ -905,7 +913,7 @@ footer p {
     
     .screen-three p {
         width: 100%;
-        text-align: justify;
+        text-align: center;
         font-size: 10px;
     }
 
